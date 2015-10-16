@@ -8,7 +8,10 @@ This runs as a scheduled WebJob on Azure once a month. See the results at [Open 
 Modify the App.config with your own Socrata API key, username, password, and Dataset Resource Id
 
 ##Dependencies
-Uses [Newtonsoft.Json (JSON De/Serialization)](https://www.nuget.org/packages/Newtonsoft.Json/) and [SODA.NET (Socrata Client)](https://github.com/CityofSantaMonica/SODA.NET). Both installable with NuGet.
+
+ - [Newtonsoft.Json (JSON De/Serialization)](https://github.com/JamesNK/Newtonsoft.Json/)
+ - [CsQuery (for HTML scraping)](https://github.com/jamietre/CsQuery)
+ - [SODA.NET (Socrata Client)](https://github.com/CityofSantaMonica/SODA.NET).
 
 ##Misc
 The State URLs on Target's site are hardcoded as they aren't quite scrapable. They weirdly load in data via AJAX. It was just easier this way. 
