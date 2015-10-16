@@ -33,7 +33,7 @@ namespace TargetStoreScraperSocrataPusher
 
             var targetStoresInUSAJSON = JsonConvert.SerializeObject(targetStoresInUSA);
             Console.WriteLine("Upserting to Socrata");
-            sodaClient.Upsert(targetStoresInUSAJSON, SodaDataFormat.JSON, ConfigurationManager.AppSettings["socrataDataset"]);
+            sodaClient.Upsert(targetStoresInUSAJSON, SodaDataFormat.JSON, ConfigurationManager.AppSettings["socrataResourceId"]);
         }
     }
 }
