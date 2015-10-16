@@ -7,6 +7,9 @@ This runs as a scheduled WebJob on Azure once a month. See the results at [Open 
 ##Usage
 Modify the App.config with your own Socrata API key, username, password, and Dataset Resource Id
 
+##Dependencies
+Uses [Newtonsoft.Json (JSON De/Serialization)](https://www.nuget.org/packages/Newtonsoft.Json/) and [SODA.NET (Socrata Client)](https://github.com/CityofSantaMonica/SODA.NET). Both installable with NuGet.
+
 ##Misc
 The State URLs on Target's site are hardcoded as they aren't quite scrapable. They weirdly load in data via AJAX. It was just easier this way. 
 
